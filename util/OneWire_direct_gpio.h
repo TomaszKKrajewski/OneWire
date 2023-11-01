@@ -6,6 +6,9 @@
 // sketches or other libraries which may include OneWire.h.
 
 #include <stdint.h>
+#if ESP_IDF_VERSION_MAJOR >= 5
+#include <hal/gpio_ll.h>
+#endif
 
 // Platform specific I/O definitions
 
